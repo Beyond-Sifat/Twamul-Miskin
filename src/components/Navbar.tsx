@@ -19,9 +19,9 @@ export default function Navbar() {
         { label: t("home"), href: "" },
         { label: t("about"), href: "/about" },
         { label: t("campaigns"), href: "/campaigns" },
-        { label: t("activities"), href: "/activities" },
-        { label: t("transparency"), href: "/transparency" },
-        { label: t("contact"), href: "/contact" },
+        // { label: t("activities"), href: "/activities" },
+        // { label: t("transparency"), href: "/transparency" },
+        // { label: t("contact"), href: "/contact" },
     ];
 
     function switchLanguage() {
