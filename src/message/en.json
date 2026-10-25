@@ -1,0 +1,33 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About Us",
+        "campaigns": "Campaigns",
+        "activities": "Our Activities",
+        "transparency": "Transparency",
+        "contact": "Contact Us",
+        "donate": "Donate Now",
+        "language": "Language",
+        "menu": "Open menu",
+        "closeMenu": "Close menu"
+    },
+    "footer": {
+        "description": "Twamul Miskin is committed to supporting vulnerable communities through charitable giving, humanitarian assistance, and emergency relief.",
+        "quickLinks": "Quick Links",
+        "home": "Home",
+        "about": "About Us",
+        "campaigns": "Campaigns",
+        "activities": "Our Activities",
+        "transparency": "Transparency",
+        "contact": "Contact Us",
+        "getInvolved": "Get Involved",
+        "donate": "Donate Now",
+        "contactHeading": "Contact Us",
+        "address": "Bangladesh",
+        "email": "Email",
+        "phone": "Phone",
+        "copyright": "All rights reserved.",
+        "privacyPolicy": "Privacy Policy",
+        "terms": "Terms and Conditions"
+    }
+}
