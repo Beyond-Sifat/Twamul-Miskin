@@ -11,6 +11,18 @@
         "menu": "Open menu",
         "closeMenu": "Close menu"
     },
+    "Home": {
+        "hero": {
+            "eyebrow": "Twamul Miskin",
+            "title": "Extending a Helping Hand to Those in Need",
+            "description": "Twamul Miskin is committed to supporting people facing hardship, including people experiencing poverty, homelessness, and the consequences of natural disasters.",
+            "donateButton": "Donate Now",
+            "aboutButton": "Learn About Us",
+            "note": "Your generosity can help bring care, dignity, and relief to people in need.",
+            "highlightTitle": "Compassion Through Action",
+            "highlightDescription": "Together, we can work toward a community where people facing hardship are treated with care, dignity, and respect."
+        }
+    },
     "footer": {
         "description": "Twamul Miskin is committed to supporting vulnerable communities through charitable giving, humanitarian assistance, and emergency relief.",
         "quickLinks": "Quick Links",

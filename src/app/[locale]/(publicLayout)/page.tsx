@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Banner from "@/components/Banner";
 
 
 export default function HomePage() {
@@ -10,7 +11,7 @@ export default function HomePage() {
     return (
         <>
             <div>
-                HEllo twamul miskin
+                <Banner/>
             </div>
         </>
     );
