@@ -47,7 +47,40 @@
                     "description": "Help people without stable housing access essential assistance and care."
                 }
             }
+        },
+        "faq": {
+      "eyebrow": "Frequently Asked Questions",
+      "title": "How Can We Help You?",
+      "description": "Find answers to common questions about Twamul Miskin and supporting its charitable work.",
+      "items": [
+        {
+          "question": "What is Twamul Miskin?",
+          "answer": "Twamul Miskin is an Islamic charitable initiative that aims to support people facing poverty, homelessness, and hardship caused by natural disasters."
+        },
+        {
+          "question": "Who can benefit from the charitable fund?",
+          "answer": "The fund is intended to help people in need, including vulnerable individuals and families, people experiencing homelessness, and communities affected by natural disasters. Assistance depends on the needs identified and the resources available."
+        },
+        {
+          "question": "What types of donations can I make?",
+          "answer": "You can explore the available donation options on our Donate page. Please review the listed categories and any guidance provided before making a contribution."
+        },
+        {
+          "question": "How will my donation be used?",
+          "answer": "Donations are intended to support the foundation's charitable purposes. Information about specific fund allocations and expenditure should be published when verified records are available."
+        },
+        {
+          "question": "Can I donate for emergency relief?",
+          "answer": "When an emergency relief campaign is available, you can review its details and the stated needs before contributing."
+        },
+        {
+          "question": "How can I learn more or ask a question?",
+          "answer": "Visit our About page to learn about the foundation, or use the Contact page to get in touch with the team."
         }
+      ],
+      "stillQuestions": "Still have questions?",
+      "contactButton": "Contact Us"
+    }
     },
     "footer": {
         "description": "Twamul Miskin is committed to supporting vulnerable communities through charitable giving, humanitarian assistance, and emergency relief.",

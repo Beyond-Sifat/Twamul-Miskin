@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Banner from "@/components/Banner";
 import AboutSection from "@/components/AboutSection";
+import FAQSection from "@/components/FAQ";
 
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
             <div>
                 <Banner/>
                 <AboutSection/>
+                <FAQSection/>
             </div>
         </>
     );
