@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Banner from "@/components/Banner";
+import AboutSection from "@/components/AboutSection";
 
 
 export default function HomePage() {
@@ -12,6 +13,7 @@ export default function HomePage() {
         <>
             <div>
                 <Banner/>
+                <AboutSection/>
             </div>
         </>
     );

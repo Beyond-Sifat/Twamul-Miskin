@@ -21,6 +21,32 @@
             "note": "Your generosity can help bring care, dignity, and relief to people in need.",
             "highlightTitle": "Compassion Through Action",
             "highlightDescription": "Together, we can work toward a community where people facing hardship are treated with care, dignity, and respect."
+        },
+        "about": {
+            "eyebrow": "Who We Are",
+            "title": "About Twamul Miskin",
+            "description": "Twamul Miskin is an Islamic charitable initiative focused on helping people who need support during difficult circumstances. The foundation aims to connect generosity with meaningful assistance for vulnerable members of the community.",
+            "purpose": "Through charitable contributions and community support, our aim is to help address essential needs and respond to hardship with compassion and responsibility.",
+            "button": "Discover Our Story",
+            "missionTitle": "Our Mission",
+            "mission": "To support people facing poverty, homelessness, and emergencies caused by natural disasters, while encouraging compassion, generosity, and responsibility within the community.",
+            "visionTitle": "Our Vision",
+            "vision": "A caring community where people in difficult circumstances can access support and where charitable giving is handled responsibly and with dignity.",
+            "areasTitle": "Our Areas of Support",
+            "areas": {
+                "poor": {
+                    "title": "Support for People in Need",
+                    "description": "Help people and families experiencing financial hardship meet essential needs."
+                },
+                "disaster": {
+                    "title": "Natural Disaster Relief",
+                    "description": "Support relief efforts for communities affected by floods, storms, and other natural disasters."
+                },
+                "homeless": {
+                    "title": "Support for Homeless People",
+                    "description": "Help people without stable housing access essential assistance and care."
+                }
+            }
         }
     },
     "footer": {
