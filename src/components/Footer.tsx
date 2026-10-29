@@ -56,8 +56,7 @@ export default function Footer() {
                     <div className="mt-4 space-y-3 text-sm text-emerald-100">
                         <p>
                             <span className="font-medium text-white">
-                                {/* {t("address")}: */}
-                                {locale === "bn" ? "ঠিকানা: " : "Address: "}
+                                {t("addressLabel")}
                             </span>{" "}
                             {/* Bangladesh */}
                             {t("address")}
@@ -72,11 +71,9 @@ export default function Footer() {
                         </p>
 
                         <p>
-                            <Link 
-                            href={`/${locale}`}
-                            className="font-medium text-white">
-                                {locale === "bn" ? "ফোন" : "Phone"}:
-                            </Link>{" "}
+                            <span className="font-medium text-white">
+                                {t("phoneLable")}:
+                            </span>{" "}
                             {/* Replace with the foundation's actual phone number */}
                             <span> {t("phone")}</span>
                         </p>
