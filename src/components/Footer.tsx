@@ -72,9 +72,11 @@ export default function Footer() {
                         </p>
 
                         <p>
-                            <span className="font-medium text-white">
+                            <Link 
+                            href={`/${locale}`}
+                            className="font-medium text-white">
                                 {locale === "bn" ? "ফোন" : "Phone"}:
-                            </span>{" "}
+                            </Link>{" "}
                             {/* Replace with the foundation's actual phone number */}
                             <span> {t("phone")}</span>
                         </p>
