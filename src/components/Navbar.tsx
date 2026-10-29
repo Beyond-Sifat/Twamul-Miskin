@@ -41,7 +41,7 @@ export default function Navbar() {
                     href={`/${locale}`}
                     className="text-xl font-bold text-emerald-800"
                 >
-                    {locale === "bn" ? "তাওয়ামুল মিসকিন" : "Twamul Miskin"}
+                    {locale === "bn" ? "ত্বআমুল মিসকীন" : "Twamul Miskin"}
                 </Link>
 
                 <div className="hidden items-center gap-6 md:flex">
