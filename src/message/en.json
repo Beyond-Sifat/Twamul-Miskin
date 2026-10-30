@@ -1,54 +1,54 @@
 {
-    "navbar": {
-        "home": "Home",
-        "about": "About Us",
-        "campaigns": "Campaigns",
-        "activities": "Our Activities",
-        "transparency": "Transparency",
-        "contact": "Contact Us",
-        "donate": "Donate Now",
-        "language": "Language",
-        "menu": "Open menu",
-        "closeMenu": "Close menu"
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "campaigns": "Campaigns",
+    "activities": "Our Activities",
+    "transparency": "Transparency",
+    "contact": "Contact Us",
+    "donate": "Donate Now",
+    "language": "Language",
+    "menu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Home": {
+    "hero": {
+      "eyebrow": "Twamul Miskin",
+      "title": "Extending a Helping Hand to Those in Need",
+      "description": "Twamul Miskin is committed to supporting people facing hardship, including people experiencing poverty, homelessness, and the consequences of natural disasters.",
+      "donateButton": "Donate Now",
+      "aboutButton": "Learn About Us",
+      "note": "Your generosity can help bring care, dignity, and relief to people in need.",
+      "highlightTitle": "Compassion Through Action",
+      "highlightDescription": "Together, we can work toward a community where people facing hardship are treated with care, dignity, and respect."
     },
-    "Home": {
-        "hero": {
-            "eyebrow": "Twamul Miskin",
-            "title": "Extending a Helping Hand to Those in Need",
-            "description": "Twamul Miskin is committed to supporting people facing hardship, including people experiencing poverty, homelessness, and the consequences of natural disasters.",
-            "donateButton": "Donate Now",
-            "aboutButton": "Learn About Us",
-            "note": "Your generosity can help bring care, dignity, and relief to people in need.",
-            "highlightTitle": "Compassion Through Action",
-            "highlightDescription": "Together, we can work toward a community where people facing hardship are treated with care, dignity, and respect."
+    "about": {
+      "eyebrow": "Who We Are",
+      "title": "About Twamul Miskin",
+      "description": "Twamul Miskin is an Islamic charitable initiative focused on helping people who need support during difficult circumstances. The foundation aims to connect generosity with meaningful assistance for vulnerable members of the community.",
+      "purpose": "Through charitable contributions and community support, our aim is to help address essential needs and respond to hardship with compassion and responsibility.",
+      "button": "Discover Our Story",
+      "missionTitle": "Our Mission",
+      "mission": "To support people facing poverty, homelessness, and emergencies caused by natural disasters, while encouraging compassion, generosity, and responsibility within the community.",
+      "visionTitle": "Our Vision",
+      "vision": "A caring community where people in difficult circumstances can access support and where charitable giving is handled responsibly and with dignity.",
+      "areasTitle": "Our Areas of Support",
+      "areas": {
+        "poor": {
+          "title": "Support for People in Need",
+          "description": "Help people and families experiencing financial hardship meet essential needs."
         },
-        "about": {
-            "eyebrow": "Who We Are",
-            "title": "About Twamul Miskin",
-            "description": "Twamul Miskin is an Islamic charitable initiative focused on helping people who need support during difficult circumstances. The foundation aims to connect generosity with meaningful assistance for vulnerable members of the community.",
-            "purpose": "Through charitable contributions and community support, our aim is to help address essential needs and respond to hardship with compassion and responsibility.",
-            "button": "Discover Our Story",
-            "missionTitle": "Our Mission",
-            "mission": "To support people facing poverty, homelessness, and emergencies caused by natural disasters, while encouraging compassion, generosity, and responsibility within the community.",
-            "visionTitle": "Our Vision",
-            "vision": "A caring community where people in difficult circumstances can access support and where charitable giving is handled responsibly and with dignity.",
-            "areasTitle": "Our Areas of Support",
-            "areas": {
-                "poor": {
-                    "title": "Support for People in Need",
-                    "description": "Help people and families experiencing financial hardship meet essential needs."
-                },
-                "disaster": {
-                    "title": "Natural Disaster Relief",
-                    "description": "Support relief efforts for communities affected by floods, storms, and other natural disasters."
-                },
-                "homeless": {
-                    "title": "Support for Homeless People",
-                    "description": "Help people without stable housing access essential assistance and care."
-                }
-            }
+        "disaster": {
+          "title": "Natural Disaster Relief",
+          "description": "Support relief efforts for communities affected by floods, storms, and other natural disasters."
         },
-        "faq": {
+        "homeless": {
+          "title": "Support for Homeless People",
+          "description": "Help people without stable housing access essential assistance and care."
+        }
+      }
+    },
+    "faq": {
       "eyebrow": "Frequently Asked Questions",
       "title": "How Can We Help You?",
       "description": "Find answers to common questions about Twamul Miskin and supporting its charitable work.",
@@ -81,26 +81,40 @@
       "stillQuestions": "Still have questions?",
       "contactButton": "Contact Us"
     }
-    },
-    "footer": {
-        "description": "Twamul Miskin is committed to supporting vulnerable communities through charitable giving, humanitarian assistance, and emergency relief.",
-        "quickLinks": "Quick Links",
-        "home": "Home",
-        "about": "About Us",
-        "campaigns": "Campaigns",
-        "activities": "Our Activities",
-        "transparency": "Transparency",
-        "contact": "Contact Us",
-        "getInvolved": "Get Involved",
-        "donate": "Donate Now",
-        "contactHeading": "Contact Us",
-        "addressLabel": "Address:",
-        "address": "299, Chandanpura, Nawab Sirajuddula Road, Chittagong, Bangladesh",
-        "email": "Email",
-        "phoneLable": "Phone",
-        "phone": "+8801785-797583",
-        "copyright": "All rights reserved.",
-        "privacyPolicy": "Privacy Policy",
-        "terms": "Terms and Conditions"
-    }
+  },
+  "donate": {
+    "title": "Make a Donation",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone (01XXXXXXXXX)",
+    "amount": "Amount (BDT)",
+    "submit": "Donate Now",
+    "processing": "Please wait...",
+    "error": "Something went wrong",
+    "successTitle": "Thank you for your donation!",
+    "successText": "Your payment was received successfully.",
+    "failedTitle": "Payment failed",
+    "failedText": "Your payment could not be completed. Please try again."
+  },
+  "footer": {
+    "description": "Twamul Miskin is committed to supporting vulnerable communities through charitable giving, humanitarian assistance, and emergency relief.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "about": "About Us",
+    "campaigns": "Campaigns",
+    "activities": "Our Activities",
+    "transparency": "Transparency",
+    "contact": "Contact Us",
+    "getInvolved": "Get Involved",
+    "donate": "Donate Now",
+    "contactHeading": "Contact Us",
+    "addressLabel": "Address:",
+    "address": "299, Chandanpura, Nawab Sirajuddula Road, Chittagong, Bangladesh",
+    "email": "Email",
+    "phoneLable": "Phone",
+    "phone": "+8801785-797583",
+    "copyright": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms and Conditions"
+  }
 }
