@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
-import dns from "node:dns";
+// import dns from "node:dns";
 
-dns.setServers(["8.8.8.8", "1.1.1.1"]);
+// dns.setServers(["8.8.8.8", "1.1.1.1"]);
+// import { setServers } from "node:dns";
+// setServers(["8.8.8.8", "8.8.4.4"]);
 
 type MongooseCache = {
     conn: typeof mongoose | null;
