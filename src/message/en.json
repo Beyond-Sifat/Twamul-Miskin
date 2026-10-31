@@ -96,6 +96,48 @@
     "failedTitle": "Payment failed",
     "failedText": "Your payment could not be completed. Please try again."
   },
+
+  "Contact": {
+    "hero": {
+      "eyebrow": "We'd Love to Hear From You",
+      "title": "Let's Start a Conversation",
+      "description": "Have a question, need information, or want to learn more about our work? Get in touch with us. We're always happy to hear from you."
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "description": "Fill out the form below and share your thoughts or questions with us.",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "subject": "Subject",
+      "subjectPlaceholder": "What is your message about?",
+      "message": "Your Message",
+      "messagePlaceholder": "Write your message here...",
+      "submit": "Send Message",
+      "demoNotice": "This is a frontend preview. Message submission is not connected yet."
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "You can reach us through any of the following channels. We'd be glad to assist you.",
+      "addressTitle": "Our Address",
+      "address": "299, Chandanpura, Nawab Sirajuddaula Road, Chattogram, Bangladesh",
+      "phoneTitle": "Phone Number",
+      "emailTitle": "Email Address",
+      "websiteTitle": "Website",
+      "noteTitle": "We're Here to Help",
+      "noteDescription": "Whether you have questions about our activities, want to contribute, or are interested in volunteering, feel free to contact us."
+    },
+    "cta": {
+      "eyebrow": "Make a Difference",
+      "title": "Support Our Mission",
+      "description": "Your generosity can help us support education, provide humanitarian assistance, and improve the lives of people in need. Join us in making a meaningful difference.",
+      "button": "Donate Now"
+    }
+  },
+  
   "footer": {
     "description": "Twamul Miskin is committed to supporting vulnerable communities through charitable giving, humanitarian assistance, and emergency relief.",
     "quickLinks": "Quick Links",
