@@ -137,6 +137,73 @@
       "button": "Donate Now"
     }
   },
+
+  "About": {
+    "hero": {
+      "eyebrow": "Who We Are",
+      "title": "Working Together for a Better Society",
+      "description": "Twamul Miskin Foundation is a non-political, non-profit organization working in education, Dawah, and humanitarian welfare, guided by the Quran and Sunnah."
+    },
+    "story": {
+      "eyebrow": "Our Story",
+      "title": "A Commitment to Faith, Knowledge and Humanity",
+      "paragraph1": "Twamul Miskin Foundation was established in 2018 through the initiative of Dr. Asimullah Nabil. The foundation was formed with a commitment to Islamic education, Dawah, and humanitarian service.",
+      "paragraph2": "Since its establishment, its stated purpose has been to contribute to society through education, religious awareness, and welfare activities, while promoting transparency, accountability, and sustainable development.",
+      "highlightLabel": "Our Beginning",
+      "highlightTitle": "A Journey That Began in 2018",
+      "highlightDescription": "Established with the intention of serving people through knowledge, faith, and humanitarian support."
+    },
+    "purpose": {
+      "eyebrow": "Our Purpose",
+      "title": "What Guides Our Work",
+      "missionTitle": "Our Mission",
+      "missionDescription": "To promote Islamic knowledge based on the Quran and Sunnah, support disadvantaged communities, provide humanitarian assistance, and contribute to poverty alleviation and self-reliance.",
+      "visionTitle": "Our Vision",
+      "visionDescription": "To contribute to a society enriched with faith, knowledge, good character, unity, and social responsibility, where people can live with dignity and support one another."
+    },
+    "pillars": {
+      "eyebrow": "Our Areas of Work",
+      "title": "Three Pillars of Our Work",
+      "description": "Our activities are organized around three main areas that reflect the foundation's objectives.",
+      "educationTitle": "Education",
+      "educationDescription": "Promoting Quran and Sunnah education, Islamic learning, scholarships, educational materials, and vocational training for disadvantaged people.",
+      "dawahTitle": "Dawah",
+      "dawahDescription": "Sharing authentic Islamic teachings, addressing misconceptions, and encouraging religious understanding through educational activities and publications.",
+      "welfareTitle": "Human Welfare",
+      "welfareDescription": "Supporting people in need through poverty alleviation, disaster relief, housing, safe drinking water, food distribution, and sustainable empowerment."
+    },
+    "principles": {
+      "eyebrow": "What We Believe In",
+      "title": "Our Principles and Values",
+      "description": "Our work is guided by Islamic teachings and a commitment to serving people with fairness, responsibility, and accountability.",
+      "values": {
+        "faith": "Following the Quran and Sunnah",
+        "unity": "Promoting unity and brotherhood",
+        "service": "Serving humanity for the pleasure of Allah",
+        "sustainability": "Encouraging sustainable development",
+        "neutrality": "Maintaining political neutrality",
+        "transparency": "Ensuring transparency and accountability"
+      }
+    },
+    "future": {
+      "eyebrow": "Looking Ahead",
+      "title": "Our Future Plans",
+      "description": "The foundation aims to expand its contribution through the following planned initiatives.",
+      "items": {
+        "mosque": "Establishing an ideal mosque and Islamic cultural center",
+        "technical": "Developing technical education and employment opportunities",
+        "women": "Supporting women-friendly education and employment",
+        "research": "Establishing a Quran and Sunnah research center",
+        "institutions": "Developing schools, colleges, and madrasas"
+      }
+    },
+    "cta": {
+      "eyebrow": "Be Part of Our Journey",
+      "title": "Together, We Can Make a Difference",
+      "description": "You can support our work through donations, Zakat, Sadaqah Jariyah, or volunteering. Every contribution can help us continue serving people in need.",
+      "button": "Support Our Mission"
+    }
+  },
   
   "footer": {
     "description": "Twamul Miskin is committed to supporting vulnerable communities through charitable giving, humanitarian assistance, and emergency relief.",
