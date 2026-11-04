@@ -1,6 +1,37 @@
 import { Schema, model, models, type InferSchemaType, type Model } from "mongoose";
 
 const donationSchema = new Schema(
+{
+tranId: { type: String, required: true, unique: true },
+donorName: { type: String, required: true, trim: true },
+donorEmail: { type: String, required: true, trim: true, lowercase: true },
+donorPhone: { type: String, required: true, trim: true },
+amount: { type: Number, required: true, min: 10 },
+currency: { type: String, default: "BDT" },
+locale: { type: String, enum: ["bn", "en"], default: "bn" },
+status: {
+  type: String,
+  enum: ["pending", "paid", "failed", "cancelled"],
+  default: "pending",
+  index: true,
+},
+paidAt: Date,
+gatewayResponse: Schema.Types.Mixed, // full SSLCommerz receipt, useful for disputes
+},
+{ timestamps: true }
+);
+
+export type DonationDoc = InferSchemaType<typeof donationSchema>;
+
+export const Donation: Model<DonationDoc> =
+(models.Donation as Model<DonationDoc>) ||
+model<DonationDoc>("Donation", donationSchema);
+
+
+
+/*import { Schema, model, models, type InferSchemaType, type Model } from "mongoose";
+
+const donationSchema = new Schema(
     {
         tranId: { type: String, required: true, unique: true }, // our own unique ID sent to SSLCommerz
         donorName: { type: String, required: true, trim: true },
@@ -31,4 +62,5 @@ export type DonationDoc = InferSchemaType<typeof donationSchema>;
 
 export const Donation: Model<DonationDoc> =
     (models.Donation as Model<DonationDoc>) ||
-    model<DonationDoc>("Donation", donationSchema);
+    model<DonationDoc>("Donation", donationSchema);*/
+
