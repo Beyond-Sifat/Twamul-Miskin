@@ -26,9 +26,6 @@ export type DonationDoc = InferSchemaType<typeof donationSchema>;
 export const Donation: Model<DonationDoc> =
 (models.Donation as Model<DonationDoc>) ||
 model<DonationDoc>("Donation", donationSchema);
-
-
-
 /*import { Schema, model, models, type InferSchemaType, type Model } from "mongoose";
 
 const donationSchema = new Schema(
