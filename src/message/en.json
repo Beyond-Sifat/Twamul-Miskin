@@ -94,7 +94,22 @@
     "successTitle": "Thank you for your donation!",
     "successText": "Your payment was received successfully.",
     "failedTitle": "Payment failed",
-    "failedText": "Your payment could not be completed. Please try again."
+    "failedText": "Your payment could not be completed. Please try again.",
+    "methodsHeading": "Payment Methods",
+"bankTransfer": "Bank Transfer",
+"mobileInstruction": "Send your donation to the {method} number below, or scan the QR code with the {method} app.",
+"numberLabel": "Number",
+"scanQr": "Scan the QR code to pay",
+"bankInstruction": "Deposit your donation to the bank account below.",
+"copy": "Copy",
+"copied": "Copied",
+"bank": {
+  "bankName": "Bank name",
+  "accountName": "Account name",
+  "accountNumber": "Account number",
+  "branch": "Branch",
+  "routingNumber": "Routing number"
+}
   },
 
   "Contact": {
