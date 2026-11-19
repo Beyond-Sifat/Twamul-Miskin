@@ -95,21 +95,34 @@
     "successText": "Your payment was received successfully.",
     "failedTitle": "Payment failed",
     "failedText": "Your payment could not be completed. Please try again.",
-    "methodsHeading": "Payment Methods",
-"bankTransfer": "Bank Transfer",
-"mobileInstruction": "Send your donation to the {method} number below, or scan the QR code with the {method} app.",
-"numberLabel": "Number",
-"scanQr": "Scan the QR code to pay",
-"bankInstruction": "Deposit your donation to the bank account below.",
-"copy": "Copy",
-"copied": "Copied",
-"bank": {
-  "bankName": "Bank name",
-  "accountName": "Account name",
-  "accountNumber": "Account number",
-  "branch": "Branch",
-  "routingNumber": "Routing number"
-}
+    "eyebrow": "Ways to Contribute",
+  "titleM": "Choose Your Donation Method",
+  "description": "Select your preferred payment method below to view the account details and instructions for making your donation.",
+  "methodsHeading": "Payment Methods",
+  "selectedMethod": "Selected Payment Method",
+  "activeMethod": "Available",
+  "methods": {
+    "bkash": "bKash",
+    "nagad": "Nagad",
+    "rocket": "Rocket",
+    "upay": "Upay"
+  },
+  "bankTransfer": "Bank Transfer",
+  "mobileInstruction": "Send your donation to the {method} number below, or scan the QR code using the {method} app.",
+  "numberLabel": "Account Number",
+  "scanQr": "Scan QR Code to Pay",
+  "qrDescription": "Open your {method} app and scan this QR code to proceed with your donation.",
+  "bankInstruction": "You can deposit your donation directly into the following bank account.",
+  "paymentReminder": "After completing your donation, please contact the foundation and share your name, phone number, donated amount, and transaction details.",
+  "copy": "Copy",
+  "copied": "Copied",
+  "bank": {
+    "bankName": "Bank Name",
+    "accountName": "Account Name",
+    "accountNumber": "Account Number",
+    "branch": "Branch",
+    "routingNumber": "Routing Number"
+  }
   },
 
   "Contact": {
