@@ -1,4 +1,5 @@
 import { Schema, model, models, type InferSchemaType, type Model } from "mongoose";
+import { DONATION_PURPOSES } from "@/data/donationPurpose";
 
 const donationSchema = new Schema(
 {
@@ -9,6 +10,7 @@ donorPhone: { type: String, required: true, trim: true },
 amount: { type: Number, required: true, min: 10 },
 currency: { type: String, default: "BDT" },
 locale: { type: String, enum: ["bn", "en"], default: "bn" },
+purpose: { type: String, enum: DONATION_PURPOSES, default: "general", index:true},
 status: {
   type: String,
   enum: ["pending", "paid", "failed", "cancelled"],

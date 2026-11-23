@@ -4,31 +4,32 @@ import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { initiateDonation } from "@/lib/api/donation.api";
 //import { initiateDonation } from "@/lib/api/donation.api";
+import { DONATION_PURPOSES } from "@/data/donationPurpose";
 
 export default function DonationForm() {
     const t = useTranslations("donate");
     const locale = useLocale() as "bn" | "en";
 
-    const [form, setForm] = useState({ donorName: "", donorEmail: "", donorPhone: "", amount: "" });
+    const [form, setForm] = useState({ donorName: "", donorEmail: "", donorPhone: "", amount: "", purpose: "general" });
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
 
-    const update = (key: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement>) =>
+    const update = (key: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) =>
         setForm((prev) => ({ ...prev, [key]: e.target.value }));
 
-  async function handleSubmit(e: React.FormEvent) {
-  e.preventDefault();
-  setError("");
-  setLoading(true);
+    async function handleSubmit(e: React.FormEvent) {
+        e.preventDefault();
+        setError("");
+        setLoading(true);
 
-  try {
-    const res = await initiateDonation({ ...form, amount: Number(form.amount), locale });
-    window.location.href = res.gatewayUrl; // go to SSLCommerz
-  } catch (err) {
-    setError(err instanceof Error ? err.message : t("error"));
-    setLoading(false);
-  }
-}
+        try {
+            const res = await initiateDonation({ ...form, amount: Number(form.amount), locale });
+            window.location.href = res.gatewayUrl; // go to SSLCommerz
+        } catch (err) {
+            setError(err instanceof Error ? err.message : t("error"));
+            setLoading(false);
+        }
+    }
 
     const inputClass = "w-full rounded-md border border-gray-300 px-3 py-2 text-sm";
 
@@ -40,6 +41,16 @@ export default function DonationForm() {
             <input className={inputClass} type="email" placeholder={t("email")} value={form.donorEmail} onChange={update("donorEmail")} required />
             <input className={inputClass} placeholder={t("phone")} value={form.donorPhone} onChange={update("donorPhone")} required />
             <input className={inputClass} type="number" min={10} placeholder={t("amount")} value={form.amount} onChange={update("amount")} required />
+            <div>
+                <label className="mb-1 block text-sm text-gray-700">{t("purposeLabel")}</label>
+                <select className={inputClass} value={form.purpose} onChange={update("purpose")} required>
+                    {DONATION_PURPOSES.map((pur) => (
+                        <option key={pur} value={pur}>
+                            {t(`purposes.${pur}`)}
+                        </option>
+                    ))}
+                </select>
+            </div>
 
             {error && <p className="text-sm text-red-600">{error}</p>}
 

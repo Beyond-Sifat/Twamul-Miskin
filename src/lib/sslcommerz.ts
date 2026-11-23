@@ -11,6 +11,7 @@ const credentials = () => ({
 type StartPaymentInput = {
   tranId: string;
   amount: number;
+  purpose: string;
   name: string;
   email: string;
   phone: string;

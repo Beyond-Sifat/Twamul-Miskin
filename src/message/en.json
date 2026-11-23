@@ -95,7 +95,18 @@
     "successText": "Your payment was received successfully.",
     "failedTitle": "Payment failed",
     "failedText": "Your payment could not be completed. Please try again.",
-    "eyebrow": "Ways to Contribute",
+    "purposeLabel": "Donation Purpose",
+    "purposes":{
+      "general": "General Donation",
+      "zakat": "Zakat",
+      "sadaqah": "Sadaqah",
+      "education": "Education Support",
+      "food": "Food Assistance"
+    },
+
+
+
+  "eyebrow": "Ways to Contribute",
   "titleM": "Choose Your Donation Method",
   "description": "Select your preferred payment method below to view the account details and instructions for making your donation.",
   "methodsHeading": "Payment Methods",
