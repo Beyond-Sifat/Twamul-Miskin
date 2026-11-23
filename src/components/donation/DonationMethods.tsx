@@ -72,11 +72,10 @@ export default function DonationMethods() {
                   aria-selected={isActive}
                   aria-controls="payment-details"
                   onClick={() => setActiveId(method.id)}
-                  className={`flex min-w-max items-center justify-between gap-4 rounded-lg border px-4 py-3 text-left text-sm font-semibold transition ${
-                    isActive
+                  className={`flex min-w-max items-center justify-between gap-4 rounded-lg border px-4 py-3 text-left text-sm font-semibold transition ${isActive
                       ? "border-emerald-700 bg-emerald-50 text-emerald-900"
                       : "border-gray-200 text-gray-700 hover:border-emerald-300 hover:bg-gray-50"
-                  }`}
+                    }`}
                 >
                   <span>{labelOf(method)}</span>
 
@@ -146,25 +145,29 @@ export default function DonationMethods() {
               </div>
 
               {/* QR Code */}
-              <div className="mt-7">
-                <h4 className="mb-2 font-semibold text-gray-900">
-                  {t("scanQr")}
-                </h4>
+              {/*<p className="text-xs text-red-600">qr: {String(active.qr)}</p>*/}
+              {active.qr && (
+                <div className="mt-7">
+                  <h4 className="mb-2 font-semibold text-gray-900">
+                    {t("scanQr")}
+                  </h4>
 
-                {/*<p className="mb-4 text-sm text-gray-500">
-                  {t("qrDescription")}
-                </p>
+                  <p className="mb-4 text-sm text-gray-500">
+                    {t("qrDescription", { method: labelOf(active) })}
+                  </p>
 
-                {/*<div className="inline-flex rounded-xl border border-gray-200 bg-white p-3">
-                  <Image
-                    src={active.qr}
-                    alt={`${labelOf(active)} QR code`}
-                    width={220}
-                    height={220}
-                    className="h-auto w-[180px] sm:w-[220px]"
-                  />
-                </div>*/}
-              </div>
+                  <div className="inline-flex rounded-xl border border-gray-200 bg-white p-3">
+                    <Image
+                      src={active.qr}
+                      alt={`${labelOf(active)} QR code`}
+                      width={220}
+                      height={220}
+                      unoptimized
+                      className="h-auto w-[180px] sm:w-[220px]"
+                    />
+                  </div>
+                </div>
+              )}
             </div>
           ) : (
             /* Bank Transfer Details */

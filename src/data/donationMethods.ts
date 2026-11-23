@@ -1,11 +1,11 @@
 export type DonationMethod =
-  | { id: "bkash" | "nagad" | "rocket"; name: string; kind: "mobile"; number: string; qr: string }
+  | { id: "bkash" | "nagad" | "rocket"; name: string; kind: "mobile"; number: string; qr?: string }
   | { id: "bank"; kind: "bank"; details: { field: string; value: string }[] };
 
 // Replace every placeholder with the foundation's REAL details.
 export const donationMethods: DonationMethod[] = [
-  { id: "nagad", name: "Nagad", kind: "mobile", number: "01XXXXXXXXX", qr: "/qr/nagad.png" },
-  { id: "bkash", name: "bKash", kind: "mobile", number: "01XXXXXXXXX", qr: "/qr/bkash.png" },
+  { id: "bkash", name: "bKash", kind: "mobile", number: "01302315657", qr: "/qr/bKash_qr.png" },
+  { id: "nagad", name: "Nagad", kind: "mobile", number: "01XXXXXXXXX"},
   {
     id: "bank",
     kind: "bank",
@@ -17,5 +17,5 @@ export const donationMethods: DonationMethod[] = [
       { field: "routingNumber", value: "000000000" },
     ],
   },
-  { id: "rocket", name: "Rocket", kind: "mobile", number: "01XXXXXXXXX", qr: "/qr/rocket.png" },
+  { id: "rocket", name: "Rocket", kind: "mobile", number: "01XXXXXXXXX"},
 ];
