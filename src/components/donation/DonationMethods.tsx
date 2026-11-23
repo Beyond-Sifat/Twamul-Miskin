@@ -47,10 +47,10 @@ export default function DonationMethods() {
       </div>
 
       {/* Main Payment Area */}
-      <div className="grid gap-6 lg:grid-cols-[280px_1fr]">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[280px_1fr]">
 
         {/* Left: Payment Method Selection */}
-        <aside className="rounded-xl border border-gray-200 bg-white p-5">
+        <aside className="min-w-0 rounded-xl border border-gray-200 bg-white p-5">
           <h3 className="mb-4 text-base font-bold text-gray-900">
             {t("methodsHeading")}
           </h3>
