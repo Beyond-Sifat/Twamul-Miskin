@@ -3,6 +3,7 @@ export type DonationPayload = {
   donorEmail: string;
   donorPhone: string;
   amount: number;
+  purpose: string;
   locale: "bn" | "en";
 };
 

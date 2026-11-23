@@ -2,21 +2,25 @@ import { NextResponse } from "next/server";
 import { connectDB } from "@/lib/db";
 import { Donation } from "@/models/Donation";
 import { startPayment } from "@/lib/sslcommerz";
+import { DONATION_PURPOSES } from "@/data/donationPurpose";
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
+
 
     const donorName = String(body.donorName ?? "").trim();
     const donorEmail = String(body.donorEmail ?? "").trim();
     const donorPhone = String(body.donorPhone ?? "").trim();
     const amount = Number(body.amount);
     const locale = body.locale === "en" ? "en" : "bn";
+    const purpose = DONATION_PURPOSES.includes(body.purpose) ? body.purpose : "general";
 
     const valid =
       donorName.length >= 2 &&
       /^\S+@\S+\.\S+$/.test(donorEmail) &&
       /^01[3-9]\d{8}$/.test(donorPhone) &&
+      purpose !== null &&
       amount >= 10 &&
       amount <= 500000;
 
@@ -27,12 +31,13 @@ export async function POST(req: Request) {
     await connectDB();
 
     const tranId = `DON-${Date.now()}-${crypto.randomUUID().slice(0, 8)}`;
-    await Donation.create({ tranId, donorName, donorEmail, donorPhone, amount, locale });
+    await Donation.create({ tranId, donorName, donorEmail, donorPhone, amount, purpose, locale });
 
     try {
       const gatewayUrl = await startPayment({
         tranId,
         amount,
+        purpose,
         name: donorName,
         email: donorEmail,
         phone: donorPhone,
